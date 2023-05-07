@@ -90,17 +90,5 @@ void ColorConsoleText(ConsoleColor color, object data)
     Console.ForegroundColor = currentForeground;
 }
 
-void Test()
-{
-	for(int i = 12; i<20;i++)
-	{
-		Console.SetCursorPosition(12,i);
-		Console.Write("asdad");
-		Console.SetCursorPosition(12,i-1);
-		Console.Write("    ");
-		Thread.Sleep(500);
-	}
-}
-
 //Render blade.
 ShowSaber(saber, blade, 100, ConsoleColor.Cyan);
