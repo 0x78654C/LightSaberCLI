@@ -3,6 +3,10 @@
  using System.Threading;
  using System.IO;
  
+ /*
+ Simple representation of light saber in console.
+ For the 4th of May Star Wars celebration.
+ */
  
  var saber =$@"
      _
