@@ -1,5 +1,6 @@
 # LightSaberCLI
  A light saber render in console for th 4th May aniversary
+ 
  Instruction:
  - copy the media file 'theforce.wav' to binary folder after compile
 
