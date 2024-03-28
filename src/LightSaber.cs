@@ -12,7 +12,7 @@
  using System.ComponentModel;
  
  BackgroundWorker worker;
- var pathMedia =Directory.GetCurrentDirectory() + @"\media\theforce.wav";
+ var pathMedia =Directory.GetCurrentDirectory() + @"\theforce.wav";
  var end = '\u203E';
  var saber =$@"
      
