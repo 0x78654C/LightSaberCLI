@@ -7,14 +7,15 @@
  Simple representation of light saber in console.
  For the 4th of May Star Wars celebration.
  */
- 
+ var end = '\u203E';
  var saber =$@"
-     _
-    |||
-    |||
+     
     |_| 
     |_] 
     | |
+    |||
+    |||
+     {end.ToString()}
  ";
  
  var blade =$@"
@@ -30,10 +31,7 @@
      █
      █
      █
-     █
-     
-     
-     
+     █    
  ";
 
 /// <summary>
@@ -43,17 +41,19 @@ void ShowSaber(string saber, string blade, int speed, ConsoleColor color)
 {
 	Console.Clear();
 	ColorConsoleTextLine(ConsoleColor.Yellow, "Happy 4th of May Star Wars!");
+	Console.SetCursorPosition(0, 14);
 	Console.Write(saber);
 	using (var reader = new StringReader(blade))
 	{
-		int i = 6;
+		int i = 17;
 		var line = "";
 		while(null != (line = reader.ReadLine()))
 		{
-			i++;
+			i--;
 			WritePosition(color, line, 0, i, speed);
 		}
 	}
+	Console.SetCursorPosition(0, 23);
 	ColorConsoleTextLine(ConsoleColor.Yellow, "May the force be with you!");
 }
 
